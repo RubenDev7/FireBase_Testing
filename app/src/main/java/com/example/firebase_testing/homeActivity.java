@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class homeActivity extends AppCompatActivity {
     TextView email;
     TextView pass;
@@ -39,6 +41,7 @@ public class homeActivity extends AppCompatActivity {
         cerrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
                 onBackPressed();
             }
         });
