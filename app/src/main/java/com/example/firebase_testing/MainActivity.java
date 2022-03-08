@@ -4,11 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.firebase.analytics.FirebaseAnalytics;
+
+ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FirebaseAnalytics analytics = FirebaseAnalytics.getInstance(this);
+        Bundle b = new Bundle();
+        b.putString("message","Integracion de FireBase completada");
+        analytics.logEvent("InitScreen",b);
     }
 }
