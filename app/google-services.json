@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "585709910502",
+    "project_id": "fir-ruben",
+    "storage_bucket": "fir-ruben.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585709910502:android:fdccb87257da575427be27",
+        "android_client_info": {
+          "package_name": "com.example.firebase_testing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585709910502-sodpt1knckp54pe2oablbjrt4ot9n9oo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs94VWBMteF3Jnzil89C4o4d-5uDy3cp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585709910502-sodpt1knckp54pe2oablbjrt4ot9n9oo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
