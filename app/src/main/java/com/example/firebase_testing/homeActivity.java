@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 import com.google.firebase.auth.FirebaseAuth;
 
 public class homeActivity extends AppCompatActivity {
@@ -21,7 +22,8 @@ public class homeActivity extends AppCompatActivity {
         main();
         Bundle extras = getIntent().getExtras();
         String e = (String) extras.get("email");
-        String p = (String) extras.get("pass");
+        String p = (String) extras.get("provider");
+        //String p = (String) extras.get("pass");
         email.setText(e);
         pass.setText(p);
     }
@@ -46,4 +48,10 @@ public class homeActivity extends AppCompatActivity {
             }
         });
     }
+
+    public enum ProviderType {
+        BASIC
+    }
+
 }
+

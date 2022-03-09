@@ -66,10 +66,7 @@ import com.google.firebase.auth.FirebaseAuth;
                          @Override
                          public void onComplete(@NonNull Task<AuthResult> task) {
                              if (task.isSuccessful()) {
-                                 Intent i = new Intent(AuthActivity.this,homeActivity.class);
-                                 i.putExtra("email",e);
-                                 i.putExtra("pass",p);
-                                 startActivity(i);
+                                 abrirHome(e, homeActivity.ProviderType.BASIC);
                              } else {
                                  String mensaje = "Fallo en el login";
                                  showAlert(mensaje);
@@ -80,6 +77,8 @@ import com.google.firebase.auth.FirebaseAuth;
              }
          });
      }
+
+
 
      private void registrarUsuario() {
         register.setOnClickListener(new View.OnClickListener() {
@@ -96,10 +95,8 @@ import com.google.firebase.auth.FirebaseAuth;
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Intent i = new Intent(AuthActivity.this,homeActivity.class);
-                        i.putExtra("email",e);
-                        i.putExtra("pass",p);
-                        startActivity(i);
+                        abrirHome(e, homeActivity.ProviderType.BASIC);
+
                     } else {
                         String mensaje = "Fallo en el registro de usuario";
                         showAlert(mensaje);
@@ -109,6 +106,15 @@ import com.google.firebase.auth.FirebaseAuth;
                 }
             }
         });
+     }
+
+     private void abrirHome(String email , homeActivity.ProviderType provider) {
+         Intent i = new Intent(AuthActivity.this,homeActivity.class);
+         i.putExtra("email",email);
+         i.putExtra("provider", provider.name());
+         //i.putExtra("pass",p);
+         startActivity(i);
+
      }
 
      private void showAlert(String mensaje) {
