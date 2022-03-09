@@ -51,4 +51,12 @@
             android:text="Acceder"
             app:cornerRadius="20dp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonGoogle"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:text="Google" />
 </LinearLayout>
