@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FireBase_Testing</string>
+    <string name="prefs_file">preferences_file</string>
 </resources>

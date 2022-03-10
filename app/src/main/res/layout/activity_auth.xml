@@ -54,9 +54,10 @@
 
     <Button
         android:id="@+id/buttonGoogle"
-        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:backgroundTint="@color/teal_700"
-        android:text="Google" />
+        android:text="Google"
+        app:cornerRadius="20dp" />
 </LinearLayout>
