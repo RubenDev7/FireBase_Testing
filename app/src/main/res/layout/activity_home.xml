@@ -25,7 +25,26 @@
         android:editable="false"
         android:layout_height="40dp"
         android:hint="Password Usuario"
+        android:layout_marginBottom="30dp"
         android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/textViewDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Dirección Usuario"
+        android:editable="false"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        />
+    <TextView
+        android:id="@+id/textViewTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Teléfono Usuario"
+        android:editable="false"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
         />
 
     <LinearLayout
