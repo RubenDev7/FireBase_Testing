@@ -29,22 +29,22 @@
         android:hint="Password Usuario"
         android:textColorHint="#757575" />
 
-    <TextView
-        android:id="@+id/textViewDireccion"
+    <EditText
+        android:id="@+id/inputDireccion"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:inputType="text"
         android:layout_marginBottom="30dp"
-        android:editable="false"
         android:gravity="center"
         android:hint="Dirección Usuario"
         android:textColorHint="#757575" />
 
-    <TextView
-        android:id="@+id/textViewTelefono"
+    <EditText
+        android:id="@+id/inputTelefono"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:inputType="text"
         android:layout_marginBottom="40dp"
-        android:editable="false"
         android:gravity="center"
         android:hint="Teléfono Usuario"
         android:textColorHint="#757575" />
