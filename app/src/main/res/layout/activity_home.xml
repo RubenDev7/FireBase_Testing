@@ -13,39 +13,41 @@
         android:id="@+id/textViewEmail"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:hint="Email Usuario"
+        android:layout_marginBottom="30dp"
         android:editable="false"
         android:gravity="center"
-        android:layout_marginBottom="30dp"
-        />
+        android:hint="Email Usuario"
+        android:textColorHint="#757575" />
 
     <TextView
         android:id="@+id/textViewPassword"
         android:layout_width="match_parent"
-        android:editable="false"
         android:layout_height="40dp"
-        android:hint="Password Usuario"
         android:layout_marginBottom="30dp"
+        android:editable="false"
         android:gravity="center"
-        />
+        android:hint="Password Usuario"
+        android:textColorHint="#757575" />
+
     <TextView
         android:id="@+id/textViewDireccion"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:hint="Dirección Usuario"
+        android:layout_marginBottom="30dp"
         android:editable="false"
         android:gravity="center"
-        android:layout_marginBottom="30dp"
-        />
+        android:hint="Dirección Usuario"
+        android:textColorHint="#757575" />
+
     <TextView
         android:id="@+id/textViewTelefono"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:hint="Teléfono Usuario"
+        android:layout_marginBottom="40dp"
         android:editable="false"
         android:gravity="center"
-        android:layout_marginBottom="40dp"
-        />
+        android:hint="Teléfono Usuario"
+        android:textColorHint="#757575" />
 
         <Button
             android:id="@+id/buttonGuardar"
@@ -84,8 +86,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Cerrar sesión"
         android:backgroundTint="#ff8f00"
+        android:text="Cerrar sesión"
+        android:textColor="#283593"
         app:cornerRadius="20dp" />
 
 
