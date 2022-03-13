@@ -67,9 +67,6 @@ import com.google.firebase.auth.GoogleAuthProvider;
             abrirHome(email_activo, homeActivity.ProviderType.valueOf(provider_activo));
         }
 
-
-
-
         //llamada a metodos y casteo de botones
         main();
 
@@ -124,16 +121,13 @@ import com.google.firebase.auth.GoogleAuthProvider;
                         showAlert("pollas de google");
                     }
                 }
-            });
-
+                });
              } catch (ApiException e) {
                  // Google Sign In failed, update UI appropriately
                  e.printStackTrace();
              }
          }
      }
-
-
 
      private void controls() {
         inputEmail = findViewById(R.id.editTextEmail);
@@ -188,7 +182,6 @@ import com.google.firebase.auth.GoogleAuthProvider;
                     public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         abrirHome(e, homeActivity.ProviderType.BASIC);
-
                     } else {
                         String mensaje = "Fallo en el registro de usuario";
                         showAlert(mensaje);
